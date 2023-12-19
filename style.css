@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  max-height: 100vh;
+  font-family: Hanken Grotesk;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#blueBox {
+  width: 250px;
+  height: 350px;
+  background-color: hsl(243, 81%, 63%);
+  border-radius: 10%;
+  text-align: center;
+}
+
+#result {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: hsl(241, 100%, 89%);
+  font-size: large;
+  font-weight: 500;
+}
+
+#totalMarksGot {
+  background-color: hsla(256, 72%, 46%, 1);
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 50%;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: white;
+}
+
+#totalMarks {
+  color: hsl(241, 100%, 89%);
+  font-size: xx-small;
+}
+
+#great {
+  padding-top: 30px;
+  color: hsl(221, 100%, 96%);
+  font-size: large;
+  font-weight: 700;
+}
+
+#score {
+  padding-top: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 10%;
+  font-size: small;
+  font-weight: 400;
+  color: hsl(241, 100%, 89%);
+}
+
+#whiteBox {
+  width: 250px;
+  height: 350px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 10px 5px 5px rgb(189, 187, 187);
+  border-bottom-right-radius: 15%;
+  border: none;
+  text-align: left;
+}
+
+#summary {
+  padding-top: 20px;
+  padding-left: 10px;
+  top: 0;
+  left: 0;
+  text-align: left;
+  font-size: large;
+  font-weight: 700;
+  color: rgb(51, 50, 50);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+}
+
+#subject1 {
+  padding-right: 20%;
+  padding-bottom: 10%;
+  text-align: center;
+  color: hsl(0, 100%, 67%);
+  font-weight: 600;
+}
+
+#subject2 {
+  padding-right: 20%;
+  padding-bottom: 10%;
+  text-align: center;
+  color: hsl(39, 100%, 56%);
+  font-weight: 600;
+}
+
+#subject3 {
+  padding-right: 20%;
+  padding-bottom: 10%;
+  text-align: center;
+  color: hsl(166, 100%, 37%);
+  font-weight: 600;
+}
+
+#subject4 {
+  padding-right: 20%;
+  text-align: center;
+  color: hsl(234, 85%, 45%);
+  font-weight: 600;
+}
+
+.marks {
+  color: rgb(29, 28, 28);
+  font-weight: 600;
+}
+
+.total {
+  color: hsl(240, 2%, 68%);
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-weight: 500;
+  margin-left: 10px;
+  background-color: rgb(33, 33, 33);
+  border-radius: 25px;
+}
+
+
+.attribution {
+  padding: 10%;
+  margin-bottom: 5%;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  font-weight: bold;
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 767px) {
+
+  /* Mobile Styles */
+  #container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #blueBox,
+  #whiteBox {
+    width: 100%;
+    margin: 0;
+  }
+
+  #whiteBox {
+    border-bottom-right-radius: 0;
+  }
+}
